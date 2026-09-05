@@ -11,16 +11,16 @@ ZENZ Student Hub gives academic teams one place to search, create, update, and o
 ## Preview
 
 <p align="center">
-  <img src="assets/screenshots/hero.png" alt="ZENZ Student Hub hero section" width="100%">
+  <img src="assets/hero.png" alt="ZENZ Student Hub hero section" width="100%">
 </p>
 
 | Student directory overview | Student records workspace |
 | --- | --- |
-| ![Student directory overview](assets/screenshots/directory-overview.png) | ![Student records workspace](assets/screenshots/student-directory.png) |
+| ![Student directory overview](assets/directory-overview.png) | ![Student records workspace](assets/student-directory.png) |
 
 | Programme cards | About ZENZ University |
 | --- | --- |
-| ![Programme cards](assets/screenshots/programmes.png) | ![About ZENZ University](assets/screenshots/about.png) |
+| ![Programme cards](assets/programmes.png) | ![About ZENZ University](assets/about.png) |
 
 ## Highlights
 
