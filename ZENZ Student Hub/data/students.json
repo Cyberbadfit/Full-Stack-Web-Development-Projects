@@ -1,0 +1,57 @@
+[
+  {
+    "id": "seed-001",
+    "name": "Aarav Mehta",
+    "email": "aarav.mehta@zenz.edu",
+    "phone": "+91 98765 21430",
+    "course": "BCA",
+    "rollNo": "BCA-2026-001",
+    "createdAt": "2026-08-21T09:00:00.000Z",
+    "updatedAt": "2026-09-05T06:27:02.598Z"
+  },
+  {
+    "id": "seed-002",
+    "name": "Riya Sharma",
+    "email": "riya.sharma@zenz.edu",
+    "phone": "+91 98102 78561",
+    "course": "AI/ML",
+    "rollNo": "AIML-2026-014",
+    "createdAt": "2026-08-21T09:01:00.000Z"
+  },
+  {
+    "id": "seed-003",
+    "name": "Kabir Nair",
+    "email": "kabir.nair@zenz.edu",
+    "phone": "+91 98910 43328",
+    "course": "B.Tech CS",
+    "rollNo": "BTCS-2026-027",
+    "createdAt": "2026-08-21T09:02:00.000Z"
+  },
+  {
+    "id": "seed-004",
+    "name": "Ananya Iyer",
+    "email": "ananya.iyer@zenz.edu",
+    "phone": "+91 98203 66549",
+    "course": "CSE",
+    "rollNo": "CSE-2026-009",
+    "createdAt": "2026-08-21T09:03:00.000Z"
+  },
+  {
+    "id": "seed-005",
+    "name": "Vihaan Gupta",
+    "email": "vihaan.gupta@zenz.edu",
+    "phone": "+91 99584 18377",
+    "course": "BCA",
+    "rollNo": "BCA-2026-018",
+    "createdAt": "2026-08-21T09:04:00.000Z"
+  },
+  {
+    "id": "seed-006",
+    "name": "Sara Khan",
+    "email": "sara.khan@zenz.edu",
+    "phone": "+91 98671 25634",
+    "course": "AI/ML",
+    "rollNo": "AIML-2026-022",
+    "createdAt": "2026-08-21T09:05:00.000Z"
+  }
+]
