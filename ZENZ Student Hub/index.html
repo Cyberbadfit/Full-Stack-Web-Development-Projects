@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ZENZ University Student Hub — a clear, secure workspace for managing student records, programmes, and academic information.">
+    <meta name="author" content="CYBERBADFIT">
+    <meta name="theme-color" content="#0b1538">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://zenzuniversity.edu.in/">
+    <meta property="og:title" content="ZENZ University | Student Hub">
+    <meta property="og:description" content="A modern, organised student management portal for ZENZ University.">
+    <meta property="og:type" content="website">
+    <title>ZENZ University | Student Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"EducationalOrganization","name":"ZENZ University","description":"A modern university student portal.","url":"https://zenzuniversity.edu.in/"}
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#students">Skip to student records</a>
+    <header class="site-header" id="top">
+      <nav class="nav shell" aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="ZENZ University home">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span>ZENZ<span>University</span></span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span><span class="sr-only">Open navigation</span></button>
+        <div class="nav-links" id="nav-links">
+          <a href="#students">Students</a>
+          <a href="#programmes">Programmes</a>
+          <a href="#about">About</a>
+          <a class="nav-cta" href="#add-student">Add student <span aria-hidden="true">→</span></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
+        <div class="shell hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow"><span></span> Student success, organised</p>
+            <h1>A more human way to manage <em>student records.</em></h1>
+            <p class="hero-text">Give your team one calm, connected place to find students, explore programmes, and keep the essentials moving.</p>
+            <div class="hero-actions">
+              <a class="button primary" href="#students">Explore records <span aria-hidden="true">↓</span></a>
+              <a class="text-link" href="#programmes">View programmes <span aria-hidden="true">→</span></a>
+            </div>
+            <dl class="hero-stats" aria-label="Portal highlights">
+              <div><dt id="heroStudentCount">—</dt><dd>Active learners</dd></div>
+              <div><dt>4</dt><dd>Future-ready programmes</dd></div>
+              <div><dt>1</dt><dd>Shared student hub</dd></div>
+            </dl>
+          </div>
+          <div class="hero-visual reveal reveal-delay" aria-label="Student records preview">
+            <div class="visual-glow"></div>
+            <div class="dashboard-preview">
+              <div class="preview-top"><span class="preview-logo">Z</span><span></span><span></span><span></span></div>
+              <div class="preview-body">
+                <p class="mini-label">TODAY AT ZENZ</p><h2>Good morning,<br>Academic team.</h2>
+                <div class="preview-chart"><span></span><span></span><span></span><span></span><span></span><i></i></div>
+                <div class="preview-row"><b>Student directory</b><strong>98%</strong></div>
+                <div class="preview-lines"><span></span><span></span><span></span></div>
+              </div>
+            </div>
+            <div class="floating-card floating-top"><span class="float-icon book">✦</span><div><b>All in sync</b><small>Records update instantly</small></div></div>
+            <div class="floating-card floating-bottom"><span class="avatars"><i>AM</i><i>RS</i><i>+</i></span><div><b>Student-first</b><small>Built for clarity</small></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="student-section section" id="students">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <div><p class="eyebrow dark"><span></span> Student directory</p><h2>Every record, right where you need it.</h2></div>
+            <p>Search, filter, add, or update student information without switching tools.</p>
+          </div>
+          <div class="summary-grid" aria-label="Student summary">
+            <article class="summary-card reveal"><span class="summary-icon indigo">⌘</span><p>Total students</p><strong id="studentsCount">0</strong><small id="studentTrend">Loading records…</small></article>
+            <article class="summary-card reveal reveal-delay"><span class="summary-icon coral">◈</span><p>Largest programme</p><strong id="largestCourse">—</strong><small id="largestCourseCount">—</small></article>
+            <article class="summary-card reveal reveal-delay-2"><span class="summary-icon mint">✓</span><p>Directory status</p><strong>Up to date</strong><small>All fields are organised</small></article>
+          </div>
+          <div class="records-layout">
+            <aside class="add-panel reveal" id="add-student">
+              <div class="panel-heading"><p class="eyebrow dark"><span></span> New record</p><h3>Add a student</h3><p>Complete the essentials to create a new record.</p></div>
+              <form id="studentForm" novalidate>
+                <label>Full name<input id="name" name="name" autocomplete="name" maxlength="80" required placeholder="e.g. Arjun Mehta"></label>
+                <label>Email address<input id="email" name="email" type="email" autocomplete="email" maxlength="120" required placeholder="arjun@zenz.edu"></label>
+                <div class="form-pair"><label>Programme<select id="course" name="course" required><option value="">Select programme</option><option value="BCA">BCA</option><option value="B.Tech CS">B.Tech CS</option><option value="CSE">CSE</option><option value="AI/ML">AI/ML</option></select></label><label>Roll number<input id="rollNo" name="rollNo" inputmode="numeric" maxlength="20" required placeholder="2026-001"></label></div>
+                <label>Phone <span class="optional">Optional</span><input id="phone" name="phone" type="tel" autocomplete="tel" maxlength="25" placeholder="+91 98765 43210"></label>
+                <p class="form-error" id="formError" role="alert"></p>
+                <button class="button primary full" type="submit">Create student record <span aria-hidden="true">→</span></button>
+              </form>
+            </aside>
+            <div class="records-panel reveal reveal-delay">
+              <div class="record-tools">
+                <div class="search-wrap"><label class="sr-only" for="searchInput">Search students</label><span aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Search name, email, roll number…"></div>
+                <label class="filter-wrap"><span class="sr-only">Filter by programme</span><select id="courseFilter"><option value="">All programmes</option><option value="BCA">BCA</option><option value="B.Tech CS">B.Tech CS</option><option value="CSE">CSE</option><option value="AI/ML">AI/ML</option></select></label>
+              </div>
+              <div class="record-caption"><span id="resultsCount">0 records</span><button class="clear-button" id="clearFilters" type="button" hidden>Clear filters</button></div>
+              <div class="table-wrap"><table><thead><tr><th>Student</th><th>Programme</th><th>Roll number</th><th>Contact</th><th><span class="sr-only">Actions</span></th></tr></thead><tbody id="studentsList"></tbody></table></div>
+              <div class="empty-state" id="noStudents" hidden><span>⌕</span><h3>No matching students</h3><p>Try a different search or add a new student record.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="programmes section" id="programmes">
+        <div class="shell">
+          <div class="section-heading compact reveal"><div><p class="eyebrow dark"><span></span> Explore pathways</p><h2>Programmes built for what’s next.</h2></div><a class="text-link dark-link" href="#students">See student directory <span aria-hidden="true">→</span></a></div>
+          <div class="programme-grid">
+            <button class="programme-card reveal" data-course="BCA" type="button"><span class="programme-number">01</span><span class="programme-icon">⌘</span><h3>BCA</h3><p>Computer applications for practical problem-solvers.</p><span class="programme-count" id="bca-count">0 students</span></button>
+            <button class="programme-card coral-card reveal reveal-delay" data-course="B.Tech CS" type="button"><span class="programme-number">02</span><span class="programme-icon">◉</span><h3>B.Tech CS</h3><p>Deep technical foundations for software builders.</p><span class="programme-count" id="btech-count">0 students</span></button>
+            <button class="programme-card mint-card reveal reveal-delay-2" data-course="CSE" type="button"><span class="programme-number">03</span><span class="programme-icon">⌁</span><h3>CSE</h3><p>Engineering knowledge for the connected world.</p><span class="programme-count" id="cse-count">0 students</span></button>
+            <button class="programme-card gold-card reveal reveal-delay-3" data-course="AI/ML" type="button"><span class="programme-number">04</span><span class="programme-icon">✦</span><h3>AI / ML</h3><p>Intelligent systems shaped with curiosity and care.</p><span class="programme-count" id="aiml-count">0 students</span></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section" id="about"><div class="shell about-grid"><div class="about-visual reveal"><div class="quote-card"><span>“</span><p>Better information makes more space for meaningful learning.</p><b>— ZENZ academic philosophy</b></div></div><div class="reveal reveal-delay"><p class="eyebrow dark"><span></span> The ZENZ difference</p><h2>Designed around the people behind the data.</h2><p class="about-copy">ZENZ University brings together modern learning and thoughtful administration. This portal keeps routine work simple so your team can focus on student success.</p><ul class="check-list"><li><span>✓</span> Clear, searchable student records</li><li><span>✓</span> Programme-level visibility at a glance</li><li><span>✓</span> Responsive, accessible interface</li></ul></div></div></section>
+    </main>
+
+    <footer><div class="shell footer-row"><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>ZENZ<span>University</span></span></a><p>© <span id="year"></span> ZENZ University. Designed &amp; developed by <strong>CYBERBADFIT</strong>.</p><a href="#top">Back to top ↑</a></div></footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <dialog id="editModal" aria-labelledby="editTitle"><form id="editForm" method="dialog"><div class="modal-header"><div><p class="eyebrow dark"><span></span> Update record</p><h2 id="editTitle">Edit student</h2></div><button class="modal-close" value="cancel" type="submit" aria-label="Close edit student form">×</button></div><input id="editId" type="hidden"><div class="modal-fields"><label>Full name<input id="editName" maxlength="80" required></label><label>Email address<input id="editEmail" type="email" maxlength="120" required></label><div class="form-pair"><label>Programme<select id="editCourse" required><option value="BCA">BCA</option><option value="B.Tech CS">B.Tech CS</option><option value="CSE">CSE</option><option value="AI/ML">AI/ML</option></select></label><label>Roll number<input id="editRollNo" maxlength="20" required></label></div><label>Phone <span class="optional">Optional</span><input id="editPhone" type="tel" maxlength="25"></label></div><p class="form-error" id="editError" role="alert"></p><div class="modal-actions"><button class="button secondary" value="cancel" type="submit">Cancel</button><button class="button primary" id="saveEdit" type="button">Save changes <span aria-hidden="true">→</span></button></div></form></dialog>
+    <script src="script.js" defer></script>
+  </body>
+</html>
