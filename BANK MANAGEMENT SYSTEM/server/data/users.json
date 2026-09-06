@@ -1,0 +1,10 @@
+[
+  {
+    "id": "7f58a80d-e21c-4556-ae18-352a097c9190",
+    "name": "Demo Customer",
+    "email": "demo@cyberbadfit.bank",
+    "passwordHash": "7d93d7e2e01ae44050c0919cb4b4cf99a6f07f4cace3b750cc5398965fe12eea95060c5e84a21911522e90cb8115ec1011a3e4171654b9caba9c613f5ff13340",
+    "passwordSalt": "a90ce03bf093e09b98057a3f4605ba23",
+    "createdAt": "2026-08-04T11:05:47.772Z"
+  }
+]

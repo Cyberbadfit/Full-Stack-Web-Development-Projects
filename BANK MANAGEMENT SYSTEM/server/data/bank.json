@@ -1,0 +1,469 @@
+{
+  "users": [
+    {
+      "id": "USR-864CD9F8",
+      "name": "System Administrator",
+      "email": "admin@cyberbadfit.bank",
+      "role": "admin",
+      "passwordHash": "ab53994a246cf558d918f8b720c64008838a71873357595bb99dabc0bafe216d69bff9f897bc8a4984221cdacb556be00f40f1c3ddb71903a8540b598e3cd2e9",
+      "passwordSalt": "a739cd38a6f99e8a95a7aeef4eab1b6e",
+      "createdAt": "2026-08-04T11:25:02.097Z",
+      "failedAttempts": 0,
+      "locked": false
+    },
+    {
+      "id": "USR-D51DE768",
+      "name": "Neha Verma",
+      "email": "employee@cyberbadfit.bank",
+      "role": "employee",
+      "passwordHash": "061e6c192536814e1e8a2e571051881aa3a23baa3cb24819381cda70668aa6866d3148a65d16a27194aa22e84bbee28e71eafc2886eeb192d77e4321c79326ee",
+      "passwordSalt": "907814cf78a3c7eef18296e6edf57621",
+      "createdAt": "2026-08-04T11:25:02.323Z",
+      "failedAttempts": 0,
+      "locked": false
+    },
+    {
+      "id": "USR-ADF21B9A",
+      "name": "Aarav Sharma",
+      "email": "demo@cyberbadfit.bank",
+      "role": "customer",
+      "passwordHash": "c5c85b54dd0390e311412afb7496a4e93b143a6a4ab66623849c7f75b2662254587767ee11586a3cf21f023b9a5ed019f81dd45c32511b2c1c29926f1e8d1702",
+      "passwordSalt": "1d89012726ee2740461de061e75c53d4",
+      "createdAt": "2026-08-04T11:25:02.605Z",
+      "failedAttempts": 0,
+      "locked": false
+    },
+    {
+      "id": "USR-EEF7970E",
+      "name": "Heman",
+      "email": "heman@gmail.com",
+      "role": "customer",
+      "passwordHash": "52cc9aa52d14bb2e215dcf5ec1c0343916ea18257f9c3e3bbe57d10582a398cf7a968c7598285c6e9dbeebfdb67009412c2c99e388be45eaa7628942d4da19b1",
+      "passwordSalt": "908d01953957f68a455daa50235862c5",
+      "createdAt": "2026-08-30T12:13:37.311Z",
+      "failedAttempts": 0,
+      "locked": false
+    }
+  ],
+  "customers": [
+    {
+      "id": "CUS-1001",
+      "userId": "USR-ADF21B9A",
+      "name": "Aarav Sharma",
+      "mobile": "9876543210",
+      "email": "demo@cyberbadfit.bank",
+      "kyc": "Verified",
+      "rewards": 1250,
+      "nominee": "Priya Sharma",
+      "createdAt": "2026-08-04T11:25:02.605Z"
+    },
+    {
+      "id": "CUS-9167BBA5",
+      "userId": "USR-EEF7970E",
+      "name": "Heman",
+      "mobile": "Not provided",
+      "email": "heman@gmail.com",
+      "kyc": "Pending",
+      "rewards": 0,
+      "nominee": "Not provided",
+      "createdAt": "2026-08-30T12:13:37.312Z"
+    }
+  ],
+  "employees": [
+    {
+      "id": "EMP-1001",
+      "userId": "USR-D51DE768",
+      "name": "Neha Verma",
+      "designation": "Relationship Manager",
+      "branchId": "BR-001",
+      "status": "Active"
+    }
+  ],
+  "branches": [
+    {
+      "id": "BR-001",
+      "name": "Central Office",
+      "city": "Mumbai",
+      "ifsc": "CBFT0000001",
+      "status": "Active"
+    }
+  ],
+  "accounts": [
+    {
+      "id": "ACC-1001",
+      "customerId": "USR-ADF21B9A",
+      "number": "10010001",
+      "type": "Premium Savings",
+      "status": "Active",
+      "branchId": "BR-001",
+      "balance": 233760.4,
+      "minimumBalance": 1000,
+      "openedAt": "2026-08-04T11:25:02.605Z"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "TXN-8660A78B",
+      "accountId": "ACC-1001",
+      "merchant": "ATM cash withdrawal",
+      "category": "ATM",
+      "amount": -9000,
+      "date": "2026-08-30",
+      "status": "Completed"
+    },
+    {
+      "id": "TXN-3045F23D",
+      "accountId": "ACC-1001",
+      "merchant": "Fixed deposit funding",
+      "category": "Fixed Deposit",
+      "amount": -5000,
+      "date": "2026-08-30",
+      "status": "Completed"
+    },
+    {
+      "id": "TXN-9F039998",
+      "accountId": "ACC-1001",
+      "merchant": "Transfer to cash",
+      "category": "Transfer",
+      "amount": -1500,
+      "date": "2026-08-30",
+      "status": "Completed"
+    },
+    {
+      "id": "TXN-E55D021D",
+      "accountId": "ACC-1001",
+      "merchant": "Cash withdrawal",
+      "category": "Withdrawal",
+      "amount": -1000,
+      "date": "2026-08-30",
+      "status": "Completed"
+    },
+    {
+      "id": "TXN-592FB9B2",
+      "accountId": "ACC-1001",
+      "merchant": "Cash deposit",
+      "category": "Deposit",
+      "amount": 500,
+      "date": "2026-08-30",
+      "status": "Completed"
+    },
+    {
+      "id": "TXN-768872FC",
+      "accountId": "ACC-1001",
+      "merchant": "Cash deposit",
+      "category": "Deposit",
+      "amount": 500,
+      "date": "2026-08-30",
+      "status": "Completed"
+    },
+    {
+      "id": "TXN-2D1ECE40",
+      "accountId": "ACC-1001",
+      "merchant": "Cash deposit",
+      "category": "Deposit",
+      "amount": 500,
+      "date": "2026-08-30",
+      "status": "Completed"
+    },
+    {
+      "id": "TXN-94821",
+      "accountId": "ACC-1001",
+      "merchant": "Northstar Market",
+      "category": "Groceries",
+      "amount": -1860.5,
+      "date": "2026-08-03",
+      "status": "Completed"
+    },
+    {
+      "id": "TXN-94822",
+      "accountId": "ACC-1001",
+      "merchant": "Salary Credit",
+      "category": "Income",
+      "amount": 85000,
+      "date": "2026-08-01",
+      "status": "Completed"
+    },
+    {
+      "id": "TXN-94823",
+      "accountId": "ACC-1001",
+      "merchant": "Atlas Power",
+      "category": "Utilities",
+      "amount": -2340,
+      "date": "2026-07-29",
+      "status": "Completed"
+    },
+    {
+      "id": "TXN-94824",
+      "accountId": "ACC-1001",
+      "merchant": "Nova Mobility",
+      "category": "Transport",
+      "amount": -780,
+      "date": "2026-07-28",
+      "status": "Completed"
+    },
+    {
+      "id": "TXN-94825",
+      "accountId": "ACC-1001",
+      "merchant": "Skyline Cafe",
+      "category": "Dining",
+      "amount": -640,
+      "date": "2026-07-27",
+      "status": "Completed"
+    }
+  ],
+  "loans": [
+    {
+      "id": "LOAN-4289FC3F",
+      "customerId": "USR-ADF21B9A",
+      "accountId": "ACC-1001",
+      "amount": 500000,
+      "annualRate": 10.5,
+      "months": 6,
+      "emi": 85903.94,
+      "outstanding": 500000,
+      "status": "Pending",
+      "createdAt": "2026-08-30T12:20:31.499Z"
+    },
+    {
+      "id": "LOAN-5CF12EC2",
+      "customerId": "USR-ADF21B9A",
+      "accountId": "ACC-1001",
+      "amount": 500000,
+      "annualRate": 10.5,
+      "months": 6,
+      "emi": 85903.94,
+      "outstanding": 500000,
+      "status": "Pending",
+      "createdAt": "2026-08-30T12:20:29.927Z"
+    },
+    {
+      "id": "LOAN-1001",
+      "customerId": "USR-ADF21B9A",
+      "accountId": "ACC-1001",
+      "amount": 150000,
+      "annualRate": 10.5,
+      "months": 36,
+      "emi": 4875,
+      "outstanding": 150000,
+      "status": "Pending",
+      "createdAt": "2026-08-04T11:25:02.606Z"
+    }
+  ],
+  "fixedDeposits": [
+    {
+      "id": "FD-CDE8D726",
+      "customerId": "USR-ADF21B9A",
+      "accountId": "ACC-1001",
+      "principal": 5000,
+      "months": 6,
+      "rate": 7.2,
+      "maturity": 5176.87,
+      "status": "Active",
+      "createdAt": "2026-08-30T12:20:51.763Z"
+    }
+  ],
+  "cards": [
+    {
+      "id": "CARD-0EABD053",
+      "accountId": "ACC-1001",
+      "number": "5100 0000 0000 4430",
+      "status": "Requested",
+      "expiry": "12/31"
+    },
+    {
+      "id": "CARD-1001",
+      "accountId": "ACC-1001",
+      "number": "5100 0000 0000 1001",
+      "status": "Active",
+      "expiry": "12/31"
+    }
+  ],
+  "cheques": [
+    {
+      "id": "CHQ-B7F1471E",
+      "accountId": "ACC-1001",
+      "leaves": 20,
+      "status": "Pending",
+      "createdAt": "2026-08-30T12:21:19.386Z"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "NOT-48818BFB",
+      "userId": "USR-ADF21B9A",
+      "message": "Rs. 9000.00 was debited from your account.",
+      "createdAt": "2026-08-30T12:21:30.027Z",
+      "read": false
+    },
+    {
+      "id": "NOT-0DDC9A25",
+      "userId": "USR-ADF21B9A",
+      "message": "Your cheque-book request is pending approval.",
+      "createdAt": "2026-08-30T12:21:19.386Z",
+      "read": false
+    },
+    {
+      "id": "NOT-DA458A98",
+      "userId": "USR-ADF21B9A",
+      "message": "Your debit-card request is pending approval.",
+      "createdAt": "2026-08-30T12:21:09.054Z",
+      "read": false
+    },
+    {
+      "id": "NOT-7EBC6966",
+      "userId": "USR-ADF21B9A",
+      "message": "Your fixed deposit is active.",
+      "createdAt": "2026-08-30T12:20:51.962Z",
+      "read": false
+    },
+    {
+      "id": "NOT-D42EFD8A",
+      "userId": "USR-ADF21B9A",
+      "message": "Your loan application is pending review.",
+      "createdAt": "2026-08-30T12:20:31.499Z",
+      "read": false
+    },
+    {
+      "id": "NOT-9E66FA80",
+      "userId": "USR-ADF21B9A",
+      "message": "Your loan application is pending review.",
+      "createdAt": "2026-08-30T12:20:29.928Z",
+      "read": false
+    },
+    {
+      "id": "NOT-E5887748",
+      "userId": "USR-ADF21B9A",
+      "message": "Transfer of Rs. 1500.00 completed.",
+      "createdAt": "2026-08-30T12:19:58.127Z",
+      "read": false
+    },
+    {
+      "id": "NOT-4AD12CB0",
+      "userId": "USR-ADF21B9A",
+      "message": "Rs. 1000.00 was debited from your account.",
+      "createdAt": "2026-08-30T12:19:34.694Z",
+      "read": false
+    },
+    {
+      "id": "NOT-5DBCDF80",
+      "userId": "USR-ADF21B9A",
+      "message": "Rs. 500.00 was credited to your account.",
+      "createdAt": "2026-08-30T12:19:19.285Z",
+      "read": false
+    },
+    {
+      "id": "NOT-88DD8C9B",
+      "userId": "USR-ADF21B9A",
+      "message": "Rs. 500.00 was credited to your account.",
+      "createdAt": "2026-08-30T12:19:17.402Z",
+      "read": false
+    },
+    {
+      "id": "NOT-4A2E5E60",
+      "userId": "USR-ADF21B9A",
+      "message": "Rs. 500.00 was credited to your account.",
+      "createdAt": "2026-08-30T12:19:15.446Z",
+      "read": false
+    },
+    {
+      "id": "NOT-3021EDCE",
+      "userId": "USR-EEF7970E",
+      "message": "Welcome. Complete your profile with an employee to activate banking services.",
+      "createdAt": "2026-08-30T12:13:37.312Z",
+      "read": false
+    },
+    {
+      "id": "NOT-22247686",
+      "userId": "USR-ADF21B9A",
+      "message": "Welcome to CYBERBADFIT Bank. Your Premium Savings account is active.",
+      "createdAt": "2026-08-04T11:25:02.606Z",
+      "read": false
+    }
+  ],
+  "logs": [
+    {
+      "id": "LOG-E0EAD01F",
+      "actorId": "USR-ADF21B9A",
+      "role": "customer",
+      "action": "Customer service: atm",
+      "time": "2026-08-30T12:21:30.027Z"
+    },
+    {
+      "id": "LOG-E8BFAFDA",
+      "actorId": "USR-ADF21B9A",
+      "role": "customer",
+      "action": "Customer service: cheque",
+      "time": "2026-08-30T12:21:19.386Z"
+    },
+    {
+      "id": "LOG-5E1097C4",
+      "actorId": "USR-ADF21B9A",
+      "role": "customer",
+      "action": "Customer service: card",
+      "time": "2026-08-30T12:21:09.054Z"
+    },
+    {
+      "id": "LOG-480E4D6D",
+      "actorId": "USR-ADF21B9A",
+      "role": "customer",
+      "action": "Customer service: fd",
+      "time": "2026-08-30T12:20:51.962Z"
+    },
+    {
+      "id": "LOG-25550738",
+      "actorId": "USR-ADF21B9A",
+      "role": "customer",
+      "action": "Customer service: loan",
+      "time": "2026-08-30T12:20:31.499Z"
+    },
+    {
+      "id": "LOG-9E2485E2",
+      "actorId": "USR-ADF21B9A",
+      "role": "customer",
+      "action": "Customer service: loan",
+      "time": "2026-08-30T12:20:29.928Z"
+    },
+    {
+      "id": "LOG-AEFE6B65",
+      "actorId": "USR-ADF21B9A",
+      "role": "customer",
+      "action": "Customer service: transfer",
+      "time": "2026-08-30T12:19:58.127Z"
+    },
+    {
+      "id": "LOG-6445CCDD",
+      "actorId": "USR-ADF21B9A",
+      "role": "customer",
+      "action": "Customer service: withdraw",
+      "time": "2026-08-30T12:19:34.694Z"
+    },
+    {
+      "id": "LOG-88B85A5F",
+      "actorId": "USR-ADF21B9A",
+      "role": "customer",
+      "action": "Customer service: deposit",
+      "time": "2026-08-30T12:19:19.285Z"
+    },
+    {
+      "id": "LOG-F32A45DF",
+      "actorId": "USR-ADF21B9A",
+      "role": "customer",
+      "action": "Customer service: deposit",
+      "time": "2026-08-30T12:19:17.506Z"
+    },
+    {
+      "id": "LOG-38AA9940",
+      "actorId": "USR-ADF21B9A",
+      "role": "customer",
+      "action": "Customer service: deposit",
+      "time": "2026-08-30T12:19:15.472Z"
+    },
+    {
+      "id": "LOG-46F61F42",
+      "actorId": "USR-EEF7970E",
+      "role": "customer",
+      "action": "Customer self-registration",
+      "time": "2026-08-30T12:13:37.312Z"
+    }
+  ]
+}
