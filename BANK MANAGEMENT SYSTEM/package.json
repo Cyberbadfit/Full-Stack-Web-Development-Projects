@@ -1,0 +1,13 @@
+{
+  "name": "cyberbadfit-bank-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Secure-by-design local bank management website demo",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node server/index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
