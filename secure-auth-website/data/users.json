@@ -1,0 +1,12 @@
+[
+  {
+    "id": "2c9cfe26-1f10-4678-ac49-2798aaaae2a7",
+    "username": "example",
+    "email": "example@gmail.com",
+    "passwordHash": "$2a$12$x9kfXjkqd9LMR4sCYXPpYO.BWsZFPDa15Z1wLofBABQ1tDU2dr3X.",
+    "role": "user",
+    "failedAttempts": 0,
+    "lockUntil": null,
+    "createdAt": "2026-09-07T12:43:35.905Z"
+  }
+]
