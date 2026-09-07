@@ -1,0 +1,31 @@
+<%- include('partials/header', { noindex: true }) %>
+
+<section class="dashboard-section">
+  <div class="dashboard-header reveal">
+    <div>
+      <p class="eyebrow">RESTRICTED</p>
+      <h1>Admin panel</h1>
+    </div>
+    <span class="role-badge role-admin">admin</span>
+  </div>
+
+  <div class="table-wrap reveal">
+    <table class="user-table">
+      <thead>
+        <tr><th>Username</th><th>Email</th><th>Role</th><th>Joined</th></tr>
+      </thead>
+      <tbody>
+        <% users.forEach(function(u) { %>
+          <tr>
+            <td><%= u.username %></td>
+            <td><%= u.email %></td>
+            <td><span class="role-badge role-<%= u.role %>"><%= u.role %></span></td>
+            <td><%= new Date(u.createdAt).toLocaleDateString() %></td>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<%- include('partials/footer') %>

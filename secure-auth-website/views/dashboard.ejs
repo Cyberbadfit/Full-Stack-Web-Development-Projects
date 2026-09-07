@@ -1,0 +1,41 @@
+<%- include('partials/header', { noindex: true }) %>
+
+<section class="dashboard-section">
+  <div class="dashboard-header reveal">
+    <div>
+      <p class="eyebrow">SIGNED IN</p>
+      <h1>Welcome, <%= user.username %></h1>
+    </div>
+    <span class="role-badge role-<%= user.role %>"><%= user.role %></span>
+  </div>
+
+  <div class="dashboard-grid">
+    <div class="card reveal">
+      <p class="tag">STATUS</p>
+      <h3>Account active</h3>
+      <p>Your account is verified and in good standing.</p>
+    </div>
+
+    <div class="card reveal">
+      <p class="tag">ROLE</p>
+      <h3>Access level</h3>
+      <p>You are signed in as <strong><%= user.role %></strong>.</p>
+    </div>
+
+    <div class="card reveal">
+      <p class="tag">SESSION</p>
+      <h3>Cookie protection</h3>
+      <p>Your session is stored in a secure, HttpOnly, SameSite cookie.</p>
+    </div>
+
+    <% if (user.role === 'admin') { %>
+      <div class="card reveal">
+        <p class="tag">ADMIN</p>
+        <h3>Admin tools</h3>
+        <p><a href="/admin">Open the admin panel &rarr;</a></p>
+      </div>
+    <% } %>
+  </div>
+</section>
+
+<%- include('partials/footer') %>

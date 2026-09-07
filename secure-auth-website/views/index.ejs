@@ -1,0 +1,101 @@
+<%- include('partials/header') %>
+
+<section class="hero">
+  <div class="hero-text reveal">
+    <p class="eyebrow">AUTHENTICATION SYSTEM</p>
+    <h1>Every account,<br />properly locked.</h1>
+    <p class="hero-console">
+      <span class="prompt">&gt;</span> <span id="typewriter"></span><span class="cursor">&#9612;</span>
+    </p>
+    <div class="hero-cta">
+      <a href="/register" class="btn btn-primary btn-lg">Create free account</a>
+      <a href="/login" class="btn btn-outline btn-lg">Log in</a>
+    </div>
+  </div>
+
+  <div class="hero-mechanism reveal" aria-hidden="true">
+    <svg class="lock-mechanism" viewBox="0 0 320 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="">
+      <circle class="ring-outer" cx="160" cy="160" r="150" />
+      <g class="ring-ticks">
+        <line x1="160" y1="14" x2="160" y2="30" transform="rotate(0 160 160)" />
+        <line x1="160" y1="14" x2="160" y2="30" transform="rotate(30 160 160)" />
+        <line x1="160" y1="14" x2="160" y2="30" transform="rotate(60 160 160)" />
+        <line x1="160" y1="14" x2="160" y2="30" transform="rotate(90 160 160)" />
+        <line x1="160" y1="14" x2="160" y2="30" transform="rotate(120 160 160)" />
+        <line x1="160" y1="14" x2="160" y2="30" transform="rotate(150 160 160)" />
+        <line x1="160" y1="14" x2="160" y2="30" transform="rotate(180 160 160)" />
+        <line x1="160" y1="14" x2="160" y2="30" transform="rotate(210 160 160)" />
+        <line x1="160" y1="14" x2="160" y2="30" transform="rotate(240 160 160)" />
+        <line x1="160" y1="14" x2="160" y2="30" transform="rotate(270 160 160)" />
+        <line x1="160" y1="14" x2="160" y2="30" transform="rotate(300 160 160)" />
+        <line x1="160" y1="14" x2="160" y2="30" transform="rotate(330 160 160)" />
+      </g>
+      <circle class="ring-dashed" cx="160" cy="160" r="108" />
+      <g class="keyhole">
+        <circle cx="160" cy="140" r="22" />
+        <path d="M148 156 L172 156 L164 200 L156 200 Z" />
+      </g>
+      <circle class="indicator" cx="160" cy="160" r="6" />
+    </svg>
+  </div>
+</section>
+
+<section class="features" id="features">
+  <p class="eyebrow eyebrow-center reveal">UNDER THE HOOD</p>
+  <h2 class="section-title reveal">Six mechanisms, working together</h2>
+
+  <div class="features-grid">
+    <article class="card reveal">
+      <p class="tag">HASH</p>
+      <h3>bcrypt password hashing</h3>
+      <p>Every password is salted and hashed with 12 rounds of bcrypt before it touches storage. Plaintext is never saved or logged.</p>
+    </article>
+
+    <article class="card reveal">
+      <p class="tag">SESSION</p>
+      <h3>Hardened sessions</h3>
+      <p>HttpOnly, SameSite cookies, with the session ID regenerated on every login to block fixation attacks.</p>
+    </article>
+
+    <article class="card reveal">
+      <p class="tag">THROTTLE</p>
+      <h3>Brute-force protection</h3>
+      <p>Rate-limited login attempts, plus a per-account lockout after five failed tries.</p>
+    </article>
+
+    <article class="card reveal">
+      <p class="tag">RBAC</p>
+      <h3>Role-based access</h3>
+      <p>Routes are gated by role. Regular users and admins see different, protected views of the same app.</p>
+    </article>
+
+    <article class="card reveal">
+      <p class="tag">VALIDATE</p>
+      <h3>Server-side validation</h3>
+      <p>Every form field is validated and every state-changing request checks a CSRF token before it's trusted.</p>
+    </article>
+
+    <article class="card reveal">
+      <p class="tag">RUNTIME</p>
+      <h3>Zero external services</h3>
+      <p>No database server to install. User data lives in a local JSON file so the whole thing runs anywhere Node.js runs.</p>
+    </article>
+  </div>
+</section>
+
+<section class="cta-banner reveal">
+  <p class="tag">READY?</p>
+  <h2>Spin up your own secured account in under a minute.</h2>
+  <a href="/register" class="btn btn-primary btn-lg">Create free account</a>
+</section>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "SecureAuth",
+  "url": "https://example.com"
+}
+</script>
+
+<%- include('partials/footer') %>

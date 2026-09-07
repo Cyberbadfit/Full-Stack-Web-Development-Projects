@@ -1,0 +1,51 @@
+<%- include('partials/header') %>
+
+<section class="auth-section">
+  <div class="auth-card reveal">
+    <p class="eyebrow">NEW ACCOUNT</p>
+    <h1>Create your account</h1>
+    <p class="auth-subtitle">Join in seconds. No credit card required.</p>
+
+    <% if (errors && errors.length) { %>
+      <ul class="form-errors">
+        <% errors.forEach(function(err) { %>
+          <li><%= err.msg %></li>
+        <% }); %>
+      </ul>
+    <% } %>
+
+    <form action="/register" method="POST" id="registerForm" novalidate>
+      <input type="hidden" name="_csrf" value="<%= csrfToken %>" />
+
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" value="<%= formData.username || '' %>" required minlength="3" maxlength="20" autocomplete="username" />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" value="<%= formData.email || '' %>" required autocomplete="email" />
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required minlength="8" autocomplete="new-password" />
+        <small class="form-hint">8+ characters, with uppercase, lowercase &amp; a number.</small>
+      </div>
+
+      <div class="form-group">
+        <label for="confirmPassword">Confirm password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required autocomplete="new-password" />
+        <small class="form-hint" id="matchHint">&nbsp;</small>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block" id="registerSubmit">
+        <span class="btn-text">Create account</span>
+      </button>
+    </form>
+
+    <p class="auth-switch">Already have an account? <a href="/login">Log in</a></p>
+  </div>
+</section>
+
+<%- include('partials/footer', { extraScript: '/js/form.js' }) %>
