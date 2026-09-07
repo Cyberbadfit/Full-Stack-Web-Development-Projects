@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><%= title %></title>
+  <meta name="description" content="<%= description %>" />
+  <meta name="robots" content="<%= typeof noindex !== 'undefined' && noindex ? 'noindex, nofollow' : 'index, follow' %>" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="<%= title %>" />
+  <meta property="og:description" content="<%= description %>" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="<%= title %>" />
+  <meta name="twitter:description" content="<%= description %>" />
+
+  <link rel="icon" href="data:," />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div id="page-loader" aria-hidden="true"><div class="spinner"></div></div>
+
+  <a href="#main-content" class="skip-link">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="/" class="logo" aria-label="SecureAuth — home">
+        <svg width="22" height="22" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="16" cy="12" r="7" fill="none" stroke="#B8935A" stroke-width="2.2" />
+          <path d="M12.5 16 L19.5 16 L17 26 L15 26 Z" fill="#B8935A" />
+        </svg>
+        <span>SecureAuth</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/#features">Features</a></li>
+        <% if (currentUser) { %>
+          <li><a href="/dashboard">Dashboard</a></li>
+          <% if (currentUser.role === 'admin') { %>
+            <li><a href="/admin">Admin</a></li>
+          <% } %>
+          <li>
+            <form action="/logout" method="POST" class="inline-form">
+              <input type="hidden" name="_csrf" value="<%= csrfToken %>" />
+              <button type="submit" class="btn btn-ghost">Log out</button>
+            </form>
+          </li>
+        <% } else { %>
+          <li><a href="/login">Log in</a></li>
+          <li><a href="/register" class="btn btn-primary btn-sm">Sign up</a></li>
+        <% } %>
+      </ul>
+    </nav>
+  </header>
+
+  <% if (successMsg && successMsg.length) { %>
+    <div class="flash flash-success" role="status"><%= successMsg[0] %></div>
+  <% } %>
+  <% if (errorMsg && errorMsg.length) { %>
+    <div class="flash flash-error" role="alert"><%= errorMsg[0] %></div>
+  <% } %>
+
+  <main id="main-content">
